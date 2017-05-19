@@ -1,0 +1,11 @@
+workers = ("Серега", "Петрович", "Иванович")
+works = ("сожает", "садит", "закапывает")
+
+while True:
+    user_input = int(input("Сколько времени?"))
+    user_input in range(8,17)
+    break
+for worker, work in zip (workers, works):   
+  if ("Петрович" in worker and Petrovich_status == "n"):
+    continue
+print(worker, ":", work)
