@@ -1,11 +1,20 @@
+	
 workers = ("Серега", "Петрович", "Иванович")
 works = ("сожает", "садит", "закапывает")
+Petrovich_status = False
 
 while True:
-    user_input = int(input("Сколько времени?"))
-    user_input in range(8,17)
-    break
-for worker, work in zip (workers, works):   
-  if ("Петрович" in worker and Petrovich_status == "n"):
-    continue
-print(worker, ":", work)
+  user_input = int(input("Сколько времени?"))
+  user_input in range(8,17)
+
+  break  
+for worker, work in zip (workers, works): 
+  print(worker, ":", work)
+  if ("Петрович" in worker and Petrovich_status == "Нет"):
+   continue
+print("Здоров ли Петрович сегодня?")
+Petrovich_status = input()
+if Petrovich_status == "Да":
+    print("Отлично!")
+elif Petrovich_status == "Нет":
+    print("Уфф,Сереге и Ивановичу сегодня придется работать за троих!")
