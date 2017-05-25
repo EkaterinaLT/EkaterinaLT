@@ -1,0 +1,67 @@
+{
+  "Омлет": {
+    "ingridients": [
+      {
+        "product": "Яицо",
+        "quantity": 2,
+        "unit": "шт."
+      },
+      {
+        "product": "Молоко",
+        "quantity": 150,
+        "unit": "мл."
+      },
+      {
+        "product": "Помидоры",
+        "quantity": 100,
+        "unit": "г."
+      }
+    ],
+    "name": "Омлет"
+  },
+  "Стейк": {
+    "ingridients": [
+      {
+        "product": "Говядина",
+        "quantity": 300,
+        "unit": "г."
+      },
+      {
+        "product": "Соль",
+        "quantity": 2,
+        "unit": "г."
+      },
+      {
+        "product": "Перец",
+        "quantity": 5,
+        "unit": "г."
+      },
+      {
+        "product": "Оливковое масло",
+        "quantity": 50,
+        "unit": "мл."
+      }
+    ],
+    "name": "Стейк"
+  },
+  "Фри": {
+    "ingridients": [
+      {
+        "product": "Картошка",
+        "quantity": 300,
+        "unit": "г."
+      },
+      {
+        "product": "Соль",
+        "quantity": 15,
+        "unit": "г."
+      },
+      {
+        "product": "Оливковое масло",
+        "quantity": 50,
+        "unit": "мл."
+      }
+    ],
+    "name": "Фри"
+  }
+}
