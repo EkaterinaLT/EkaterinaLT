@@ -1,9 +1,5 @@
-import json
-from pprint import pprint
-
-
 def get_shop_list_by_dishes(dishes, person_count):
-  with open('cookBook.json') as book: cook_book = json.load(book)
+  cook_book = read_book()
   shop_list = {}
   for dish in dishes:
     for ingridient in cook_book[dish]:
@@ -27,5 +23,22 @@ def create_shop_list():
 		.lower().split(', ')
 	shop_list = get_shop_list_by_dishes(dishes, person_count)
 	print_shop_list(shop_list)
+	
+def read_book():
+	title = ['ingridient_name', 'quantity', 'measure']
+	dishes = list()
+	ingridients_lists = list()
+	with open('cookBook.txt') as book:
+		for line in book:
+			if line == '\n': continue
+			dish = line.strip()
+			ingridients_list = list()
+			for i in range(int(book.readline())):
+				ingridients_list.append(dict(zip(title, book.readline().strip().split('|'))))
+				ingridients_list[i]['quantity'] = int(ingridients_list[i]['quantity'])
+			dishes.append(dish)
+			ingridients_lists.append(ingridients_list)
+	return dict(zip(dishes, ingridients_lists))
+	#print(cook_book)
 
 create_shop_list()
