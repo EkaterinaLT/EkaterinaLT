@@ -1,3 +1,7 @@
+import json
+from pprint import pprint
+
+
 def get_shop_list_by_dishes(dishes, person_count):
   with open('cookBook.json') as book: cook_book = json.load(book)
   shop_list = {}
