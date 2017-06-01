@@ -19,7 +19,6 @@ def all_words_from_file(rss):
             tags_removed = tags.sub('', news['description'])
         words = tags_removed.split(' ')
         all_words.extend(words)
-        #print(all_words)
 
     More_than_six_letters = list(filter(lambda x: len(x[0]) > 6, words.most_common()))[:10]
     return More_than_six_letters
