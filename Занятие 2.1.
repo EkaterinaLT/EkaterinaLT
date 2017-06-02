@@ -1,4 +1,5 @@
 def get_shop_list_by_dishes(dishes, person_count):
+ with open('cookBook.json') as book: cook_book = json.load(book)
   cook_book = read_book()
   shop_list = {}
   for dish in dishes:
