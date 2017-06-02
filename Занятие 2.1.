@@ -27,7 +27,7 @@ def read_book():
   title = ['ingridient_name','quantity','measure']
   dishes = list()
   ingridients_lists = list()
-with open('cookBook.txt') as book_file:
+   with open('cookBook.txt') as book_file:
   for line in book_file:
   line = line.strip()
   if not line:
